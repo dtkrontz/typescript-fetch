@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import { isJsxClosingElement } from 'typescript';
-import DisplayWeather from './DisplayWeather';
+import LocationDisplay from './LocationDisplay';
 
 type Props ={
 
@@ -81,8 +80,9 @@ export default class Location extends Component<Props, State> {
     render() {
         return(
             <div>
-                <p>The Temp in {this.state.name} is:</p>
-                {this.state.weather}
+                <LocationDisplay name={this.state.name} weather={this.state.weather} />
+                {/* <p>The Temp in {this.state.name} is:</p>
+                {this.state.weather} */}
             </div>
         )
     }
