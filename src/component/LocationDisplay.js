@@ -4,8 +4,8 @@ const LocationDisplay = (props) => {
 
     return (
         <div>
-            <h4>The Temp in {props.name} is:</h4>
-            {props.weather}
+            <h2>The Temp in {props.name} is:</h2>
+            <h3>{props.weather} degrees fahrenheit</h3>
         </div>
     )
 }
