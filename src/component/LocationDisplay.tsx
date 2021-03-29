@@ -1,6 +1,11 @@
 import React from 'react';
 
-const LocationDisplay = (props) => {
+type Props = {
+    name: string,
+    weather: number
+}
+
+const LocationDisplay = (props: Props) => {
 
     return (
         <div>
