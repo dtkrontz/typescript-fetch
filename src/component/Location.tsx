@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {ChangeEvent, Component, FormEvent, SyntheticEvent} from 'react';
 import LocationDisplay from './LocationDisplay';
 
 type Props ={
@@ -23,7 +23,7 @@ export default class Location extends Component<Props, State> {
         }
     }
 
-    successfulCoord = (obj: any) => {
+    successfulCoord = (obj: GeolocationPosition) => {
         this.setState(
             {
                 latitude: Math.round(obj.coords.latitude),
